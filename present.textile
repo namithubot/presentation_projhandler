@@ -1,0 +1,33 @@
+h1. Project Handler
+By Shubham & Shubham
+
+h1. What is project_handler?
+
+ * It's, as the name suggests, a simple application to handle projects.
+ * One can sign in and create their project(s), update and deprecate the project information.
+ ** Project information like group, details, status, etc
+ ** Privacy through sessions.
+
+h1. Tables Involved
+
+ :Two tables:
+ # *Project Information*
+ # *User Information*
+
+h1. Table: Project Information
+
+ |_. Column Name|_. Type|_. Constraints|
+ |Project ID|Integer (Dynamic)|Primary Key|
+ |Admin|String|Foreign key (username)|
+ |isGroup|Boolean|Not NULL|
+ |Group Name|String|-|
+ |Sharing Link|String|-|
+ |Description|Varchar|Not NULL|
+ |Status|String|Not NULL|
+
+h1. Table : User Information
+ 
+ |_. Column Name|_. Type|_. Constraints|
+ |Username|String|Primary Key|
+ |Password|String|Not NULL|
+ |E-mail|String|Not NULL, Unique| 

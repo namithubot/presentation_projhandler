@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+   <title>Your Title Here</title>
+   
+   
+
+<style>
+html, body { margin: 0; padding: 0; }
+
+body { font-family: Verdana, Geneva, Arial, Helvetica, sans-serif; }
+
+a:link, a:visited { color: black; }
+
+h1 { font-size: 30pt;  }
+h2 { font-size: 28pt;  }
+h3 { font-size: 25pt;  }
+p, li, dt, dd, td, th { font-size: 18pt; }
+
+pre { font-size: 14pt;  }
+pre.small { font-size: 11pt; }
+
+pre.code {
+        background-color: azure;
+        padding: 5px;
+      }
+     
+ul { list-style-type: square; }    
+   
+.center { text-align: center; }   
+     
+.slide { page-break-after: always;
+         min-height: 100mm;
+         padding: 40px;
+         
+         border: 1px dotted black;
+
+/*      
+  background: -moz-linear-gradient( top, maroon, red);
+*/
+       }
+
+
+
+/*
+for princexml (CSS3 paged media support)
+@page { size: A4 landscape }
+*/
+</style>
+
+</head>
+<body>
+
+<div class="presentation">
+
+<div class='slide '>
+
+<!-- _S9SLIDE_ -->
+<h1>Project Handler
+By Shubham &amp; Shubham</h1>
+
+</div>
+<div class='slide '>
+<!-- _S9SLIDE_ -->
+<h1>What is project_handler?</h1>
+<ul>
+	<li>It&#8217;s, as the name suggests, a simple application to handle projects.</li>
+	<li>One can sign in and create their project(s), update and deprecate the project information.
+	<ul>
+		<li>Project information like group, details, status, etc</li>
+		<li>Privacy through sessions.</li>
+	</ul></li>
+</ul>
+
+</div>
+<div class='slide '>
+<!-- _S9SLIDE_ -->
+<h1>Tables Involved</h1>
+:Two tables:
+<ol>
+	<li><strong>Project Information</strong></li>
+	<li><strong>User Information</strong></li>
+</ol>
+
+</div>
+<div class='slide '>
+<!-- _S9SLIDE_ -->
+<h1>Table: Project Information</h1>
+|<em>. Column Name|_. Type|</em>. Constraints|
+|Project ID|Integer (Dynamic)|Primary Key|
+|Admin|String|Foreign key (username)|
+|isGroup|Boolean|Not NULL|
+|Group Name|String|-|
+|Sharing Link|String|-|
+|Description|Varchar|Not NULL|
+|Status|String|Not NULL|
+
+</div>
+<div class='slide '>
+<!-- _S9SLIDE_ -->
+<h1>Table : User Information</h1>
+|-. Column Name|<em>. Type|</em>. Constraints|
+|Username|String|Primary Key|
+|Password|String|Not NULL|
+|E-mail|String|Not NULL, Unique|</div>
+
+
+  </div> <!-- presentation -->
+</body>
+</html> 
+
